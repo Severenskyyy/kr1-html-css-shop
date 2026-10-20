@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Оформление заявки на покупку наушников и колонок в магазине SoundShop.">
+    <title>Оформление заявки — SoundShop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="site-header__logo" href="index.html">SoundShop</a>
+            <nav class="site-nav">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="order.html">Заявка</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="container">
+        <section class="order">
+            <h1 class="page-title">Оформление заявки</h1>
+            <p class="order__text">Заполните форму, и менеджер свяжется с вами, чтобы подтвердить заказ.</p>
+
+            <!-- Форма заявки -->
+            <form class="order-form" action="#">
+                <div class="order-form__field">
+                    <label class="order-form__label" for="name">Имя</label>
+                    <input class="order-form__input" type="text" id="name" name="name" placeholder="Иван" required>
+                </div>
+
+                <div class="order-form__field">
+                    <label class="order-form__label" for="email">E-mail</label>
+                    <input class="order-form__input" type="email" id="email" name="email" placeholder="example@mail.ru" required>
+                </div>
+
+                <div class="order-form__field">
+                    <label class="order-form__label" for="phone">Телефон</label>
+                    <input class="order-form__input" type="tel" id="phone" name="phone" placeholder="+7 (900) 000-00-00" required>
+                </div>
+
+                <div class="order-form__field">
+                    <label class="order-form__label" for="product">Товар</label>
+                    <select class="order-form__input" id="product" name="product" required>
+                        <option value="">Выберите товар</option>
+                        <option value="airpods-pro-2">Apple AirPods Pro 2 — 19 990 ₽</option>
+                        <option value="galaxy-buds-plus">Samsung Galaxy Buds+ — 4 990 ₽</option>
+                        <option value="sony-wh-1000xm4">Sony WH-1000XM4 — 22 990 ₽</option>
+                        <option value="jbl-flip-5">JBL Flip 5 — 7 990 ₽</option>
+                        <option value="jbl-partybox-encore">JBL PartyBox Encore — 29 990 ₽</option>
+                        <option value="marshall-acton-2">Marshall Acton II — 24 990 ₽</option>
+                    </select>
+                </div>
+
+                <div class="order-form__field">
+                    <label class="order-form__label" for="comment">Комментарий</label>
+                    <textarea class="order-form__input order-form__textarea" id="comment" name="comment" rows="5" placeholder="Адрес доставки, удобное время для звонка"></textarea>
+                </div>
+
+                <div class="order-form__field order-form__field--checkbox">
+                    <input class="order-form__checkbox" type="checkbox" id="agree" name="agree" required>
+                    <label class="order-form__label" for="agree">Я согласен на обработку персональных данных</label>
+                </div>
+
+                <div class="order-form__actions">
+                    <button class="button" type="submit">Отправить заявку</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <p class="site-footer__copy">© 2026 SoundShop. Учебный проект.</p>
+            <ul class="site-footer__list">
+                <li class="site-footer__item"><a class="site-footer__link" href="index.html#advantages">Преимущества</a></li>
+                <li class="site-footer__item"><a class="site-footer__link" href="index.html#popular">Популярные товары</a></li>
+                <li class="site-footer__item"><a class="site-footer__link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

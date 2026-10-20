@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Беспроводные наушники Apple AirPods Pro 2: описание, характеристики и цена. Оформите заявку в магазине SoundShop.">
+    <title>Наушники Apple AirPods Pro 2 — SoundShop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="site-header__logo" href="index.html">SoundShop</a>
+            <nav class="site-nav">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="product.html">Товар</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="container">
+        <!-- Информация о товаре -->
+        <section class="product">
+            <img class="product__img" src="images/airpods-pro-2.jpg" alt="Беспроводные наушники Apple AirPods Pro 2">
+            <div class="product__info">
+                <h1 class="product__title">Беспроводные наушники Apple AirPods Pro 2</h1>
+                <p class="product__price">19 990 ₽</p>
+                <p class="product__description">AirPods Pro 2 — беспроводные внутриканальные наушники Apple с активным шумоподавлением и режимом прозрачности. Подходят для музыки, звонков и спорта.</p>
+                <p class="product__description">В комплекте: зарядный кейс MagSafe с разъёмом USB-C, кабель USB-C и амбушюры четырёх размеров (XS, S, M, L).</p>
+                <div class="product__buttons">
+                    <a class="button" href="order.html">Оформить заявку</a>
+                    <button class="button button--secondary" type="button" id="open-modal">Условия доставки</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Таблица характеристик -->
+        <section class="specs">
+            <h2 class="section-title">Характеристики</h2>
+            <table class="specs-table">
+                <caption class="specs-table__caption">Технические характеристики AirPods Pro 2</caption>
+                <thead>
+                    <tr>
+                        <th>Параметр</th>
+                        <th>Значение</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Тип наушников</td>
+                        <td>Беспроводные, внутриканальные</td>
+                    </tr>
+                    <tr>
+                        <td>Подключение</td>
+                        <td>Bluetooth 5.3</td>
+                    </tr>
+                    <tr>
+                        <td>Шумоподавление</td>
+                        <td>Активное (ANC), режим прозрачности</td>
+                    </tr>
+                    <tr>
+                        <td>Время работы</td>
+                        <td>До 6 часов, с кейсом — до 30 часов</td>
+                    </tr>
+                    <tr>
+                        <td>Зарядка кейса</td>
+                        <td>USB-C, MagSafe, беспроводная Qi</td>
+                    </tr>
+                    <tr>
+                        <td>Защита от пыли и влаги</td>
+                        <td>IP54 (наушники и кейс)</td>
+                    </tr>
+                    <tr>
+                        <td>Вес одного наушника</td>
+                        <td>5,3 г</td>
+                    </tr>
+                    <tr>
+                        <td>Цвет</td>
+                        <td>Белый</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Модальное окно (открывается кнопкой «Условия доставки») -->
+        <dialog class="modal" id="delivery-modal">
+            <h2 class="modal__title">Условия доставки</h2>
+            <ul class="modal__list">
+                <li class="modal__item">По Москве — курьером за 1–2 дня, бесплатно при заказе от 5 000 ₽.</li>
+                <li class="modal__item">По России — транспортной компанией за 3–7 дней.</li>
+                <li class="modal__item">Самовывоз из магазина — бесплатно, в день заказа.</li>
+            </ul>
+            <button class="button" type="button" id="close-modal">Закрыть</button>
+        </dialog>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <p class="site-footer__copy">© 2026 SoundShop. Учебный проект.</p>
+            <ul class="site-footer__list">
+                <li class="site-footer__item"><a class="site-footer__link" href="index.html#advantages">Преимущества</a></li>
+                <li class="site-footer__item"><a class="site-footer__link" href="index.html#popular">Популярные товары</a></li>
+                <li class="site-footer__item"><a class="site-footer__link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Каталог SoundShop: наушники Apple, Samsung и Sony, колонки JBL и Marshall.">
+    <title>Каталог товаров — SoundShop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="site-header__logo" href="index.html">SoundShop</a>
+            <nav class="site-nav">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html">Каталог</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="container">
+        <h1 class="page-title">Каталог товаров</h1>
+
+        <div class="catalog">
+            <!-- Категории и фильтры (статический блок) -->
+            <aside class="filters">
+                <h2 class="filters__title">Категории</h2>
+                <ul class="filters__list">
+                    <li class="filters__item"><a class="filters__link" href="#headphones">Наушники</a></li>
+                    <li class="filters__item"><a class="filters__link" href="#speakers">Колонки</a></li>
+                </ul>
+
+                <h2 class="filters__title">Фильтры</h2>
+                <form class="filters__form" action="#">
+                    <div class="filters__field">
+                        <label class="filters__label" for="price-from">Цена от, ₽</label>
+                        <input class="filters__input" type="number" id="price-from" name="price_from" placeholder="0">
+                    </div>
+                    <div class="filters__field">
+                        <label class="filters__label" for="price-to">Цена до, ₽</label>
+                        <input class="filters__input" type="number" id="price-to" name="price_to" placeholder="30000">
+                    </div>
+                    <div class="filters__checkbox">
+                        <input type="checkbox" id="in-stock" name="in_stock">
+                        <label for="in-stock">Только в наличии</label>
+                    </div>
+                    <div class="filters__checkbox">
+                        <input type="checkbox" id="sale" name="sale">
+                        <label for="sale">Со скидкой</label>
+                    </div>
+                    <button class="button filters__button" type="submit">Применить</button>
+                </form>
+            </aside>
+
+            <!-- Карточки товаров -->
+            <div class="catalog__content">
+                <section class="catalog__section" id="headphones">
+                    <h2 class="catalog__title">Наушники</h2>
+                    <div class="product-list">
+                        <article class="product-card">
+                            <span class="product-card__badge">Хит</span>
+                            <img class="product-card__img" src="images/airpods-pro-2.jpg" alt="Беспроводные наушники Apple AirPods Pro 2">
+                            <h3 class="product-card__title">Apple AirPods Pro 2</h3>
+                            <p class="product-card__description">Беспроводные наушники с активным шумоподавлением. До 30 часов работы вместе с кейсом.</p>
+                            <p class="product-card__price">19 990 ₽</p>
+                            <a class="button product-card__button" href="product.html">Подробнее</a>
+                        </article>
+
+                        <article class="product-card product-card--discount">
+                            <span class="product-card__badge">Скидка</span>
+                            <img class="product-card__img" src="images/galaxy-buds-plus.jpg" alt="Беспроводные наушники Samsung Galaxy Buds+">
+                            <h3 class="product-card__title">Samsung Galaxy Buds+</h3>
+                            <p class="product-card__description">Беспроводные наушники с двухполосными динамиками AKG. До 22 часов работы с кейсом.</p>
+                            <p class="product-card__price">4 990 ₽</p>
+                            <a class="button product-card__button" href="product.html">Подробнее</a>
+                        </article>
+
+                        <article class="product-card">
+                            <img class="product-card__img" src="images/sony-wh-1000xm4.jpg" alt="Полноразмерные наушники Sony WH-1000XM4">
+                            <h3 class="product-card__title">Sony WH-1000XM4</h3>
+                            <p class="product-card__description">Полноразмерные беспроводные наушники с шумоподавлением. До 30 часов работы.</p>
+                            <p class="product-card__price">22 990 ₽</p>
+                            <a class="button product-card__button" href="product.html">Подробнее</a>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="catalog__section" id="speakers">
+                    <h2 class="catalog__title">Колонки</h2>
+                    <div class="product-list">
+                        <article class="product-card">
+                            <span class="product-card__badge">Новинка</span>
+                            <img class="product-card__img" src="images/jbl-flip-5.jpg" alt="Портативная колонка JBL Flip 5">
+                            <h3 class="product-card__title">JBL Flip 5</h3>
+                            <p class="product-card__description">Портативная колонка с защитой от воды IPX7. До 12 часов работы.</p>
+                            <p class="product-card__price">7 990 ₽</p>
+                            <a class="button product-card__button" href="product.html">Подробнее</a>
+                        </article>
+
+                        <article class="product-card">
+                            <img class="product-card__img" src="images/jbl-partybox-encore.jpg" alt="Колонка для вечеринок JBL PartyBox Encore">
+                            <h3 class="product-card__title">JBL PartyBox Encore</h3>
+                            <p class="product-card__description">Колонка для вечеринок со световым шоу и двумя микрофонами. До 10 часов работы.</p>
+                            <p class="product-card__price">29 990 ₽</p>
+                            <a class="button product-card__button" href="product.html">Подробнее</a>
+                        </article>
+
+                        <article class="product-card">
+                            <img class="product-card__img" src="images/marshall-acton-2.jpg" alt="Домашняя колонка Marshall Acton II">
+                            <h3 class="product-card__title">Marshall Acton II</h3>
+                            <p class="product-card__description">Домашняя колонка в классическом стиле Marshall. Подключается по Bluetooth.</p>
+                            <p class="product-card__price">24 990 ₽</p>
+                            <a class="button product-card__button" href="product.html">Подробнее</a>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <p class="site-footer__copy">© 2026 SoundShop. Учебный проект.</p>
+            <ul class="site-footer__list">
+                <li class="site-footer__item"><a class="site-footer__link" href="index.html#advantages">Преимущества</a></li>
+                <li class="site-footer__item"><a class="site-footer__link" href="index.html#popular">Популярные товары</a></li>
+                <li class="site-footer__item"><a class="site-footer__link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

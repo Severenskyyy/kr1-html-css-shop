@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SoundShop — интернет-магазин наушников и колонок Apple, Samsung, Sony, JBL и Marshall. Доставка по всей России.">
+    <title>SoundShop — магазин наушников и колонок</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="site-header__logo" href="index.html">SoundShop</a>
+            <nav class="site-nav">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="index.html">Главная</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="container">
+        <!-- Hero-блок -->
+        <section class="hero">
+            <h1 class="hero__title">Наушники и колонки для любимой музыки</h1>
+            <p class="hero__text">Apple, Samsung, Sony, JBL и Marshall в одном магазине. Поможем выбрать модель и доставим заказ по всей России.</p>
+            <div class="hero__buttons">
+                <a class="button" href="catalog.html">Перейти в каталог</a>
+                <a class="button button--secondary" href="order.html">Оставить заявку</a>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section class="advantages" id="advantages">
+            <h2 class="section-title">Наши преимущества</h2>
+            <div class="advantages__list">
+                <div class="advantages__item">
+                    <h3 class="advantages__title">Быстрая доставка</h3>
+                    <p class="advantages__text">По Москве за 1–2 дня, по России — от 3 дней.</p>
+                </div>
+                <div class="advantages__item">
+                    <h3 class="advantages__title">Гарантия 1 год</h3>
+                    <p class="advantages__text">На все товары действует гарантия производителя.</p>
+                </div>
+                <div class="advantages__item">
+                    <h3 class="advantages__title">Удобная оплата</h3>
+                    <p class="advantages__text">Картой, наличными или при получении заказа.</p>
+                </div>
+                <div class="advantages__item">
+                    <h3 class="advantages__title">Помощь с выбором</h3>
+                    <p class="advantages__text">Консультант подскажет, какая модель вам подойдёт.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Популярные товары -->
+        <section class="popular" id="popular">
+            <h2 class="section-title">Популярные товары</h2>
+            <div class="product-list">
+                <article class="product-card">
+                    <span class="product-card__badge">Хит</span>
+                    <img class="product-card__img" src="images/airpods-pro-2.jpg" alt="Беспроводные наушники Apple AirPods Pro 2">
+                    <h3 class="product-card__title">Apple AirPods Pro 2</h3>
+                    <p class="product-card__description">Беспроводные наушники с активным шумоподавлением. До 30 часов работы вместе с кейсом.</p>
+                    <p class="product-card__price">19 990 ₽</p>
+                    <a class="button product-card__button" href="product.html">Подробнее</a>
+                </article>
+
+                <article class="product-card product-card--discount">
+                    <span class="product-card__badge">Скидка</span>
+                    <img class="product-card__img" src="images/galaxy-buds-plus.jpg" alt="Беспроводные наушники Samsung Galaxy Buds+">
+                    <h3 class="product-card__title">Samsung Galaxy Buds+</h3>
+                    <p class="product-card__description">Беспроводные наушники с двухполосными динамиками AKG. До 22 часов работы с кейсом.</p>
+                    <p class="product-card__price">4 990 ₽</p>
+                    <a class="button product-card__button" href="product.html">Подробнее</a>
+                </article>
+
+                <article class="product-card">
+                    <span class="product-card__badge">Новинка</span>
+                    <img class="product-card__img" src="images/jbl-flip-5.jpg" alt="Портативная колонка JBL Flip 5">
+                    <h3 class="product-card__title">JBL Flip 5</h3>
+                    <p class="product-card__description">Портативная колонка с защитой от воды IPX7. До 12 часов работы.</p>
+                    <p class="product-card__price">7 990 ₽</p>
+                    <a class="button product-card__button" href="product.html">Подробнее</a>
+                </article>
+            </div>
+            <a class="button button--secondary popular__link" href="catalog.html">Смотреть весь каталог</a>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <p class="site-footer__copy">© 2026 SoundShop. Учебный проект.</p>
+            <ul class="site-footer__list">
+                <li class="site-footer__item"><a class="site-footer__link" href="index.html#advantages">Преимущества</a></li>
+                <li class="site-footer__item"><a class="site-footer__link" href="index.html#popular">Популярные товары</a></li>
+                <li class="site-footer__item"><a class="site-footer__link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
